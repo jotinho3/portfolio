@@ -36,6 +36,7 @@ main {
 
 
 
+
 ::-webkit-scrollbar {
     width: 10px;
     background-color: rgb(255, 255, 255);
@@ -45,6 +46,10 @@ main {
     background-color: rgb(0, 0, 0);
    
 }
+
+
+
+
 
 .nav-flex {
     display: flex;
@@ -314,6 +319,8 @@ main {
 
 
 
+
+
 .block-knowledge {
     display: flex;
     flex-direction: column;
@@ -390,7 +397,54 @@ main {
         }
     }
 
+
+    .contentBx {
+        font-size: 0.9rem;
+    }
+
+
+    
+
 }
+
+
+.clickSuggestIcon {
+
+    visibility: hidden;
+    position: absolute;
+
+    
+  
+    @media (max-width: $mobile-width) {
+    
+    top: 350px; 
+    left: 45vw;
+    visibility: visible;
+    img {
+        width: 30px;
+        height: 30px;
+     
+       
+    }
+        
+        h2 strong {
+            font-size: 200%;
+        }
+
+        h2 {
+            font-size: 100%;
+        }
+
+
+    }
+   }
+
+
+    
+  
+
+
+
 
 
 

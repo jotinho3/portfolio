@@ -944,6 +944,33 @@ main {
   height: 170px;
 }
 
+.block-knowledge .contentBx {
+  font-size: 0.9rem;
+}
+
+.clickSuggestIcon {
+  visibility: hidden;
+  position: absolute;
+}
+
+@media (max-width: 480px) {
+  .clickSuggestIcon {
+    top: 350px;
+    left: 45vw;
+    visibility: visible;
+  }
+  .clickSuggestIcon img {
+    width: 30px;
+    height: 30px;
+  }
+  .clickSuggestIcon h2 strong {
+    font-size: 200%;
+  }
+  .clickSuggestIcon h2 {
+    font-size: 100%;
+  }
+}
+
 .block-skills-flex {
   display: -webkit-box;
   display: -ms-flexbox;

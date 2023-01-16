@@ -12,6 +12,7 @@ const btn_nav_hamburger = document.getElementById('btn-nav-hamburger');
 const hamburger_menu_toggle = document.querySelector('.hamburger-menu-toggle');
 const $lang_change = document.querySelector('.lang-change');
 const $brand_flex_icon = document.querySelector('.brand-flex-icon');
+const $knowledge_card = document.querySelectorAll('.card');
 
 
 
@@ -145,6 +146,39 @@ btn_nav_hamburger.addEventListener('click', () => {
 
  
 })
+
+
+// SuggestClickKnowledgeInMobile 
+
+anime({
+  targets: '#clickSuggestIcon',
+  delay: 250,
+  scale: 5,
+  loop: true,
+  easing: 'easeInOutSine'
+});
+
+
+for(var i = 0; i < $knowledge_card.length; i++) {
+  $knowledge_card[i].addEventListener("click", bindClick(i));
+}
+
+function bindClick() {
+return function() {
+       anime({
+      targets: '#clickSuggestIcon',
+      delay: 0,
+      scale: 0.5,
+      loop: false,
+      duration: 50,
+      opacity: 0
+    });
+   
+
+
+   
+};
+}
 
 
 
