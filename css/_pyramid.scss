@@ -2,6 +2,11 @@
     $color: #ffffff;
     $speed: 10;
 
+
+* {
+  cursor: pointer;
+}
+
 .container {
   width: 200px;
   height: 200px;
@@ -78,6 +83,7 @@
   background-color: #bbb;
   box-shadow: 0 0 40px 40px #bbb;
   animation: ShadowS $speed+s infinite linear;
+  
 }
 
 @keyframes ShadowS {
