@@ -9,6 +9,11 @@
   flex: 1 1 400px;
   border-radius: 20px;
 }
+@media (max-width: 1380px) {
+  .card {
+    flex: 1 1 260px;
+  }
+}
 .card:hover {
   transition: all 0.5s;
   opacity: 1;
@@ -682,9 +687,9 @@ main {
   position: absolute;
   top: 5000px;
 }
-@media (max-width: 1420px) {
+@media (max-width: 1380px) {
   .block-skills-flex {
-    top: 8000px;
+    top: 5000px;
   }
 }
 @media (max-width: 890px) {
@@ -756,13 +761,18 @@ main {
   flex-direction: column;
   height: -moz-max-content;
   height: max-content;
-  width: 65vw;
+  width: 75vw;
   padding: 100px;
   background-color: transparent;
   position: absolute;
   top: 6000px;
   gap: 300px;
   text-align: center;
+}
+@media (max-width: 1380px) {
+  .block-projects-flex {
+    top: 6000px;
+  }
 }
 @media (max-width: 1280px) {
   .block-projects-flex {
@@ -806,6 +816,14 @@ main {
 .block-projects-flex .projects-card .card-img video {
   width: 550px;
   height: 550px;
+}
+@media (max-width: 1380px) {
+  .block-projects-flex .projects-card .card-img {
+    order: 1;
+  }
+  .block-projects-flex .projects-card .card-img video {
+    max-width: 30vw;
+  }
 }
 @media (max-width: 768px) {
   .block-projects-flex .projects-card .card-img {
@@ -863,6 +881,11 @@ main {
 @media (max-width: 1280px) {
   .footer-main {
     top: 15000px;
+  }
+}
+@media (max-width: 1380px) {
+  .footer-main {
+    top: 10000px;
   }
 }
 @media (max-width: 768px) {

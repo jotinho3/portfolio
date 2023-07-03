@@ -458,8 +458,8 @@ main {
     top: 5000px;
 
 
-    @media (max-width: 1420px){
-        top: 8000px;
+    @media (max-width: $notebook-width){
+        top: 5000px;
     }
 
 
@@ -544,7 +544,7 @@ main {
 .block-projects-flex {
     @include flexStart(center, center, column);
     height: max-content;
-    width: 65vw;
+    width: 75vw;
     padding: 100px;
     background-color: transparent;
     position: absolute;
@@ -552,6 +552,10 @@ main {
     gap: 300px;
     text-align: center;
 
+
+    @media (max-width: $notebook-width){
+        top: 6000px;
+    }
 
     @media (max-width: $landscape-width){
         top: 7300px;
@@ -602,6 +606,17 @@ main {
                 width: 550px;
                 height: 550px;
             }
+
+
+            @media (max-width: $notebook-width) {
+                order: 1;
+                video {
+                    max-width: 30vw;
+                }
+
+
+            }
+            
 
             @media (max-width: $tablet-width) {
                 order: 1;
@@ -676,6 +691,10 @@ main {
 
     @media (max-width: $landscape-width){
         top: +15000px;
+    }
+
+    @media (max-width: $notebook-width){
+        top: +10000px;
     }
 
 

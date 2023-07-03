@@ -1,4 +1,7 @@
- .card{
+@import "./variables";
+
+
+.card{
         position: relative;
         width: 320px;
         height: 500px;
@@ -7,6 +10,11 @@
         overflow: hidden;
         flex: 1 1 400px;
         border-radius: 20px;
+
+        @media (max-width: $notebook-width) {
+          flex: 1 1 260px;
+          
+        }
     
     
         &:hover {
