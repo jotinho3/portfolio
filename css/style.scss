@@ -12,16 +12,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+
+    &:focus {
+        outline: none;
+        outline-width: 0;
+    }
     
 }
 
 html {
     scroll-behavior: smooth;
     transition: scroll 3s linear;
+    overflow-x: hidden;
 }
 
 body {
     height: 100%;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     
@@ -302,7 +310,7 @@ main {
 
     @media (max-width: $mobile-width) {
         h2 strong {
-            font-size: 200%;
+            font-size: 120%;
         }
 
         h2 {
@@ -326,22 +334,13 @@ main {
     flex-direction: column;
     justify-content: center;
     background-color: transparent;
-    width: 100%;
+    width: 90%;
     height: fit-content;
     position: absolute;
     top: 2500px;
     transition: all 0.3s ease-in-out;
 
-    @media (max-width: $mobile-width) {
-
-        position: absolute !important;
-        top: 3000px !important;
-   
-
     
-    
-}
-
   @media (max-width: $tablet-width) {
 
         position: absolute !important;
@@ -362,6 +361,16 @@ main {
 
 }
 
+@media (max-width: $mobile-width) {
+
+        position: absolute !important;
+        top: 2300px !important;
+        width: auto;
+   
+
+    
+    
+}
 
 
     h1,h3 {
@@ -394,6 +403,12 @@ main {
         .cssicon {
            width: 170px;
            height: 170px;
+        }
+    }
+
+    .knowledge-title {
+        h1 {
+            font-size: 2rem;
         }
     }
 
@@ -452,7 +467,7 @@ main {
 .block-skills-flex {
     @include flexStart(space-around, center, column);
     height: 800px;
-    width: $section_width;
+    width: 100%;
     background-color: $section_bg_black;
     position: absolute;
     top: 5000px;
@@ -464,10 +479,10 @@ main {
 
 
 
-    @media (max-width: 890px){
+    @media (max-width: $mobile-width){
         height: max-content;
         gap: 60px;
-        top: +9500px;
+        top: +12000px;
     }
 }
 
@@ -564,8 +579,17 @@ main {
 
     @media (max-width: $tablet-width) {
         top: +11000px;
+        gap: 50px;
         
     }
+
+    @media (max-width: $mobile-width) {
+        top: +14000px;
+        gap: 120px;
+        
+    }
+    
+
 
   
 
@@ -576,13 +600,14 @@ main {
 
 
     .projects-card {
-        @include flexStart(center, center, row);
+        @include flexStart(center, center, row);    
         gap: 100px;
 
+        
 
-        @media (max-width: 1280px) {
+
+        @media (max-width: $mobile-width) {
             @include flexStart(center, center, column);
-            max-width: 300px;
 
                
         }
@@ -599,7 +624,7 @@ main {
         .card-img {
             
             img {
-                max-width: 50vw;
+                max-width: 80dvw;
             }
 
             video {
@@ -678,6 +703,18 @@ main {
 }
 
 
+.project-stack-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+    gap: 20px;
+
+    img {
+        width: 40px
+    }
+}
+
+
 .footer-main {
     @include flexStart(center, center, column);
     height: max-content;
@@ -694,15 +731,19 @@ main {
     }
 
     @media (max-width: $notebook-width){
-        top: +10000px;
+        top: +16000px;
     }
 
 
 
     @media (max-width: $tablet-width){
         height: max-content;
-        gap: 60px;
-        top: +17000px;
+        gap: 50px;
+        top: +26000px;
+    }
+
+    @media (max-width: $mobile-width){
+        top: +26500px;
     }
 
 

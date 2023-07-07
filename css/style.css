@@ -302,15 +302,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+*:focus {
+  outline: none;
+  outline-width: 0;
 }
 
 html {
   scroll-behavior: smooth;
   transition: scroll 3s linear;
+  overflow-x: hidden;
 }
 
 body {
   height: 100%;
+  width: 100%;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
@@ -582,7 +589,7 @@ main {
 }
 @media (max-width: 480px) {
   .name-presentation h2 strong {
-    font-size: 200%;
+    font-size: 120%;
   }
   .name-presentation h2 {
     font-size: 100%;
@@ -594,18 +601,12 @@ main {
   flex-direction: column;
   justify-content: center;
   background-color: transparent;
-  width: 100%;
+  width: 90%;
   height: -moz-fit-content;
   height: fit-content;
   position: absolute;
   top: 2500px;
   transition: all 0.3s ease-in-out;
-}
-@media (max-width: 480px) {
-  .block-knowledge {
-    position: absolute !important;
-    top: 3000px !important;
-  }
 }
 @media (max-width: 768px) {
   .block-knowledge {
@@ -617,6 +618,13 @@ main {
   .block-knowledge {
     position: absolute !important;
     top: 3000px !important;
+  }
+}
+@media (max-width: 480px) {
+  .block-knowledge {
+    position: absolute !important;
+    top: 2300px !important;
+    width: auto;
   }
 }
 .block-knowledge h1, .block-knowledge h3 {
@@ -649,6 +657,9 @@ main {
 .block-knowledge .knowledge-flex .cssicon {
   width: 170px;
   height: 170px;
+}
+.block-knowledge .knowledge-title h1 {
+  font-size: 2rem;
 }
 .block-knowledge .contentBx {
   font-size: 0.9rem;
@@ -692,12 +703,12 @@ main {
     top: 5000px;
   }
 }
-@media (max-width: 890px) {
+@media (max-width: 480px) {
   .block-skills-flex {
     height: -moz-max-content;
     height: max-content;
     gap: 60px;
-    top: 9500px;
+    top: 12000px;
   }
 }
 
@@ -782,6 +793,13 @@ main {
 @media (max-width: 768px) {
   .block-projects-flex {
     top: 11000px;
+    gap: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .block-projects-flex {
+    top: 14000px;
+    gap: 120px;
   }
 }
 .block-projects-flex .block-projects-title {
@@ -794,13 +812,12 @@ main {
   flex-direction: row;
   gap: 100px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 480px) {
   .block-projects-flex .projects-card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 300px;
   }
 }
 .block-projects-flex .projects-card .card-title {
@@ -811,7 +828,7 @@ main {
   gap: 40px;
 }
 .block-projects-flex .projects-card .card-img img {
-  max-width: 50vw;
+  max-width: 80dvw;
 }
 .block-projects-flex .projects-card .card-img video {
   width: 550px;
@@ -863,6 +880,16 @@ main {
   width: 50%;
 }
 
+.project-stack-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.project-stack-flex img {
+  width: 40px;
+}
+
 .footer-main {
   display: flex;
   justify-content: center;
@@ -885,15 +912,20 @@ main {
 }
 @media (max-width: 1380px) {
   .footer-main {
-    top: 10000px;
+    top: 16000px;
   }
 }
 @media (max-width: 768px) {
   .footer-main {
     height: -moz-max-content;
     height: max-content;
-    gap: 60px;
-    top: 17000px;
+    gap: 50px;
+    top: 26000px;
+  }
+}
+@media (max-width: 480px) {
+  .footer-main {
+    top: 26500px;
   }
 }
 .footer-main h3 {
