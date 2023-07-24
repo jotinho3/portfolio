@@ -601,7 +601,7 @@ main {
   flex-direction: column;
   justify-content: center;
   background-color: transparent;
-  width: 90%;
+  width: 100%;
   height: -moz-fit-content;
   height: fit-content;
   position: absolute;
@@ -901,7 +901,7 @@ main {
   padding: 100px;
   background-color: #000;
   position: absolute;
-  top: 9800px;
+  top: 13800px;
   gap: 300px;
   text-align: center;
 }
