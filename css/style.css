@@ -901,11 +901,7 @@ main {
   padding: 100px;
   background-color: #000;
   position: absolute;
-<<<<<<< HEAD
-  top: 10200px;
-=======
   top: 13800px;
->>>>>>> 251621adf1311127ae1cfc2a899df633a613fe6a
   gap: 300px;
   text-align: center;
 }
@@ -916,7 +912,7 @@ main {
 }
 @media (max-width: 1380px) {
   .footer-main {
-    top: 17000px;
+    top: 21000px;
   }
 }
 @media (max-width: 768px) {
