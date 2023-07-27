@@ -601,7 +601,7 @@ main {
   flex-direction: column;
   justify-content: center;
   background-color: transparent;
-  width: 90%;
+  width: 100%;
   height: -moz-fit-content;
   height: fit-content;
   position: absolute;
@@ -901,7 +901,11 @@ main {
   padding: 100px;
   background-color: #000;
   position: absolute;
+<<<<<<< HEAD
   top: 10200px;
+=======
+  top: 13800px;
+>>>>>>> 251621adf1311127ae1cfc2a899df633a613fe6a
   gap: 300px;
   text-align: center;
 }
