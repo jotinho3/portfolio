@@ -901,18 +901,18 @@ main {
   padding: 100px;
   background-color: #000;
   position: absolute;
-  top: 9800px;
+  top: 10200px;
   gap: 300px;
   text-align: center;
 }
 @media (max-width: 1280px) {
   .footer-main {
-    top: 15000px;
+    top: 16000px;
   }
 }
 @media (max-width: 1380px) {
   .footer-main {
-    top: 16000px;
+    top: 17000px;
   }
 }
 @media (max-width: 768px) {
