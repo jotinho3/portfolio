@@ -3,8 +3,8 @@
     place-items: center;
   }
 .typing-demo {
-    width: 20.5ch;
-    animation: typing 5s steps(22), blink 0.5s step-end infinite alternate;
+    width: 34.5ch;
+    animation: typing 5s steps(32), blink 0.2s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
