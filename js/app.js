@@ -17,47 +17,7 @@ const $knowledge_card = document.querySelectorAll('.card');
 
 
 //Block Main e Shadow remover mouse over delimitador
-var timer;
-var hoverClass = 'block-main-hover'
 
-
-  block_main.addEventListener('pointerover', () => {
-    timer = setTimeout(function mainEvent () {
-      block_main.classList.add('block-main-animated');
-      shadow.classList.remove('shadow')
-      hoverClass = null; // o valor está como null aqui já que depois dessa função ser executada o valor de block-main-hover nao vai ser passado na função de baixo, assim, depois do bloco ser esticado o hover não pode mais acontecer
-      block_main.classList.remove('block-main-hover') // solução feita para remover a classe dentro da propria função 
-      hiddenCircle.remove(); // 
-      containerMain.style.display = 'none'
-      block_main_flex.style.opacity = "1"
-      block_main_flex.style.cursor = 'inherit'
-
-      
-      
-
-    }, 1200);
-   
-
- })
-
-
-  block_main.addEventListener('pointerout', () => {
-
-    block_main.classList.remove('block-main-hover')
-    hiddenCircle.style.opacity = '0'
-    clearTimeout(timer);
-   
-  });
-
-
-
-  block_main.addEventListener('pointerover', () => {
-
-    block_main.classList.add(hoverClass)
-    hiddenCircle.style.opacity = '0.6'
-    
-   
-  });
 
 
   //Mudança de idioma
@@ -136,8 +96,9 @@ btn_nav_hamburger.addEventListener('click', () => {
   $lang_change.classList.toggle('disabled');
   hamburger_menu_toggle.classList.toggle('enabled');
 
-  if (hamburger_menu_toggle.classList.contains('enabled')) {
-    document.body.style.overflowY = 'hidden'
+  if (btn_nav_hamburger.classList.contains('is-active')) {
+    document.body.style.overflowY = 'hidden '
+    console.log('is hidden')
   }else {
     document.body.style.overflowY = 'scroll'
 

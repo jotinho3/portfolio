@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/x-icon" href="img/JotaIcon.png">
     <script src="https://kit.fontawesome.com/404f1f8d83.js" crossorigin="anonymous"></script>
+    <script src="js/anime.min.js" defer></script>
+    <script src="js/particles.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/animateScroll.js" defer></script>
   </head>
 
   <body>
@@ -52,37 +56,33 @@
 
       <main class="main" id="main">
         <section class="name-presentation">
-          <div class="suggestClick" data-anime="down"><img src="img/arrowGif.gif" alt=""></div>
           <div class="name-presentation-box">
             <h2 language="BR">
               Eu sou <br />
               <strong>João Pedro Marques Chaves</strong>
-              <div class="wrapper"><h2 class="typing-demo">Desenvolvedor Fullstack</div>
+              <div class="wrapper"><h2 class="typing-demo">Desenvolvedor Fullstack | UI/UX Designer</div>
             </h2>
 
             <h2 language="EN">
               I am<br />
               <strong>João Pedro Marques Chaves</strong>
-              <div class="wrapper"><h2 class="typing-demo">Fullstack Developer</div>
+              <div class="wrapper"><h2 class="typing-demo">Fullstack Developer | UI/UX Designer</div>
               
             </h2>
           </div>
+
+          
         </section>
+
+
+        <div class="scrollDownIcon">
+            <img src="img/AcidicGlamorousCirriped-max-1mb.gif" alt="">
+          </div>
 
      
 
 
         <section class="block-main" data-anime="down">
-          <div class="hiddenCircle"></div>
-
-          <div class="container">
-            <div class="side left"></div>
-            <div class="side front"></div>
-            <div class="side right"></div>
-            <div class="side back"></div>
-            <div class="shadow"></div>
-          </div>
-
           <div class="block-main-flex" id="sobre">
             <div><h1 language="EN">ABOUT ME</h1> <h1 language="BR">SOBRE MIM</h1></div>
             <div class="flex-intern">
@@ -353,14 +353,16 @@
           </div>
         </section>
 
-        <section class="block-projects-flex" data-anime="left" id="projects">
+
+
+        <section class="block-projects-flex" id="projects">
           <div class="block-projects-title" ><h1 language="EN">PROJECTS</h1><h1 language="BR">PROJETOS</h1></div>
 
-          <div class="projects-card">
+          <div class="projects-card" data-anime="left">
             
 
             <div class="card-img">
-              <video src="./img/Projeto1Vid.mp4" autoplay loop muted width="700px" height="700px">
+              <video src="./img/Projeto1Vid.mp4" autoplay loop muted width="600dvw">
             </div>
 
             <div class="card-title">
@@ -399,7 +401,7 @@
         
 
 
-          <div class="projects-card">
+          <div class="projects-card" data-anime="right">
             <div class="card-title">
               <h1 language="BR">Mostruario de Motion animation e criação de vídeo</h1>
               <h1 language="EN">Motion animation and vídeo editing</h1>
@@ -424,11 +426,11 @@
 
         
 
-          <div class="projects-card">
+          <div class="projects-card" data-anime="left">
             
 
             <div class="card-img">
-              <img src="img/ApiSequelizeUserPicture.PNG" width="400px">
+              <img src="img/ApiSequelizeUserPicture.PNG" width="600dvw">
             </div>
 
             <div class="card-title">
@@ -462,7 +464,7 @@
             </div>
           </div>
 
-          <div class="projects-card">
+          <div class="projects-card" data-anime="right">
             
 
             
@@ -501,16 +503,16 @@
             </div>
 
             <div class="card-img">
-              <img src="img/SaudeEmDuasRodasPicture.PNG" width="400px">
+              <img src="img/SaudeEmDuasRodasPicture.PNG" width="600px">
             </div>
 
           </div>
-
-          <div class="projects-card">
+ 
+          <div class="projects-card" data-anime="left">
             
 
             <div class="card-img">
-              <img src="img/RexpeitaWebScrappingPicture.PNG" width="400px" alt="">
+              <img src="img/RexpeitaWebScrappingPicture.PNG" width="600dvw"" alt="">
             </div>
 
             <div class="card-title">
@@ -556,7 +558,7 @@
 
 
 
-          <div class="projects-card">
+          <div class="projects-card" data-anime="right">
             
 
 
@@ -597,138 +599,15 @@
 
             
             <div class="card-img">
-              <img src="img/PomodoroTimerPicture.PNG" width="400px" height="280px">
+              <img src="img/PomodoroTimerPicture.PNG" width="600px" height="280px">
             </div>
 
 
           </div>
 
-          <div class="projects-card">
-            
+      
 
-            <div class="card-img">
-              <img src="img/ToDoAppPicture.PNG" width="400px" height="300px">
-            </div>
-
-            <div class="card-title">
-              <h1 language="EN">ToDo App React Project</h1>
-              <h1 language="BR">Aplicativo ToDo em React</h1>
-              <p language="BR">
-                Projeto de ToDo desenvolvido durante o curso de React
-                da Rocketseat, o projeto tem algumas bibliotecas e se 
-                encontra responsivo
-              </p>
-               <p language="EN">
-                ToDo project made during the Rocketseat React Course,
-                this project has some librarys installed and is 
-                currently responsive
-              </p>
-
-              <div class="project-stack-flex">
-                <h3 language="BR">Tecnologias:</h3>
-                <h3 language="EN">Techs: </h3>
-                <img src="img/HTMLIcon.png" alt="">
-                <img src="img/ReactIcon.png" alt="">
-                <img src="img/CSSIcon.png" alt="">
-                <img src="img/JavaScriptICON.png" alt="">
-
-              </div>
-                               
-              <div>
-              <a href="https://github.com/jotinho3/To_do_rocketseat" target="_blank" ><button><i class="fa-brands fa-github"></i> GitHub</button></a>
-              <a href="https://todojotinhoapp.netlify.app" target="_blank"><button><i class="fa-solid fa-window-maximize"></i> Deploy</button></a>
-            </div>
-            </div>
-          </div>
-
-          <div class="projects-card">
-            
-
-            <div class="card-img">
-              <img src="img/uiux.PNG" width="450px" height="280px">
-            </div>
-
-            <div class="card-title">
-              <h1 language="EN">Pomodoro Timer Rocketseat</h1>
-              <h1 language="BR">Pomodoro Timer Rocketseat</h1>
-              <p language="BR">
-                Projeto de Pomodoro Timer que guarda as tarefas feitas em histórico, eu usei 
-                context API nesse projeto, além disso,
-                esse projeto tem algumas bibliotecas react como date-fns, phosphor-icons,
-                react-router-dom, react-hook-form e framer-motion.
-              </p>
-               <p language="EN">
-                Pomodoro Timer project that keeps the tasks done in history, i used
-                context API for this project.
-                This project has some react libraries like date-fns, phosphor-icons,
-                react-router-dom, react-hook-form and framer-motion.
-              </p>
-
-              <div class="project-stack-flex">
-                <h3 language="BR">Tecnologias:</h3>
-                <h3 language="EN">Techs: </h3>
-                <img src="img/HTMLIcon.png" alt="HTML">
-                <img src="img/ReactIcon.png" alt="React">
-                <img src="img/CSSIcon.png" alt="CSS">
-                <img src="img/JavaScriptICON.png" alt="JavaScript">
-                <img src="img/styledcomponentsicon.png" alt="styledcomponents">
-                <img src="img/FramerMotionIcon.png" alt="framermotion" aria-label="Framer Motion Imagem">
-
-              </div>
-                              
-                               
-              <div>
-              <a href="https://github.com/jotinho3/Pomodoro-Timer-Rocket" target="_blank" ><button><i class="fa-brands fa-github"></i> GitHub</button></a>
-              <a href="https://pomodorotimerj.netlify.app/" target="_blank"><button><i class="fa-solid fa-window-maximize"></i> Deploy</button></a>
-            </div>
-            </div>
-          </div>
-
-          <div class="projects-card">
-            
-
-            <div class="card-img">
-              <img src="img/UIUXSkyrimNightingale.PNG" width="450px" height="280px">
-            </div>
-
-            <div class="card-title">
-              <h1 language="EN">Pomodoro Timer Rocketseat</h1>
-              <h1 language="BR">Pomodoro Timer Rocketseat</h1>
-              <p language="BR">
-                Projeto de Pomodoro Timer que guarda as tarefas feitas em histórico, eu usei 
-                context API nesse projeto, além disso,
-                esse projeto tem algumas bibliotecas react como date-fns, phosphor-icons,
-                react-router-dom, react-hook-form e framer-motion.
-              </p>
-               <p language="EN">
-                Pomodoro Timer project that keeps the tasks done in history, i used
-                context API for this project.
-                This project has some react libraries like date-fns, phosphor-icons,
-                react-router-dom, react-hook-form and framer-motion.
-              </p>
-
-              <div class="project-stack-flex">
-                <h3 language="BR">Tecnologias:</h3>
-                <h3 language="EN">Techs: </h3>
-                <img src="img/HTMLIcon.png" alt="HTML">
-                <img src="img/ReactIcon.png" alt="React">
-                <img src="img/CSSIcon.png" alt="CSS">
-                <img src="img/JavaScriptICON.png" alt="JavaScript">
-                <img src="img/styledcomponentsicon.png" alt="styledcomponents">
-                <img src="img/FramerMotionIcon.png" alt="framermotion" aria-label="Framer Motion Imagem">
-
-              </div>
-                              
-                               
-              <div>
-              <a href="https://github.com/jotinho3/Pomodoro-Timer-Rocket" target="_blank" ><button><i class="fa-brands fa-github"></i> GitHub</button></a>
-              <a href="https://pomodorotimerj.netlify.app/" target="_blank"><button><i class="fa-solid fa-window-maximize"></i> Deploy</button></a>
-            </div>
-            </div>
-          </div>
-
-
-          <div class="projects-card">
+          <div class="projects-card" data-anime="right">
             
 
 
@@ -767,17 +646,17 @@
 
             
             <div class="card-img">
-              <img src="img/FirebaseChat.PNG" width="400px" height="280px">
+              <img src="img/FirebaseChat.PNG" width="600dvw">
             </div>
 
 
           </div>
 
-          <div class="projects-card">
+          <div class="projects-card" data-anime="left">
             
 
             <div class="card-img">
-              <img src="img/UIUXSkyrimNightingale.PNG" width="400px" height="350px">
+              <img src="img/UIUXSkyrimNightingale.PNG" width="600px" height="350px">
             </div>
 
             <div class="card-title">
@@ -812,7 +691,7 @@
 
 
 
-          <div class="projects-card">
+          <div class="projects-card" data-anime="right">
             
 
 
@@ -848,7 +727,7 @@
 
             
             <div class="card-img">
-              <img src="img/uiux.PNG" width="450px" >
+              <img src="img/uiux.PNG" width="600dvw">
             </div>
 
 
@@ -877,11 +756,8 @@
       <div id="progress-bar"></div>
     </div>
 
-    <script src="js/anime.min.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/animateScroll.js"></script>
+    
 
-    <script></script>
+  
   </body>
 </html>

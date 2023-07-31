@@ -1,34 +1,17 @@
-function animeScroll() {
-    
-    const skillCardSection = document.querySelector('.block-skills-flex')
-    const skillCards = document.querySelectorAll('.skill-card')
-    const targets = document.querySelectorAll('[data-anime]')
-    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4)
-    targets.forEach(function (e) {
-      if ((windowTop) > e.offsetTop) {
-        e.classList.add('animate') 
-       
-        
-      }
-  
-      else {
-        e.classList.remove('animate') 
-       
-        
-  
-      }
+function animateOnScroll(entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate');
+    } else {
+      entry.target.classList.remove('animate');
+    }
+  });
+}
 
-    })
+const targets = document.querySelectorAll('[data-anime]');
+const observerOptions = {
+  rootMargin: '-25% 0px', // Adjust this rootMargin as needed
+};
 
-    
-
-    
-    
-  
-  }
-
- 
-  
-  window.addEventListener('scroll', () => {
-    animeScroll();
-  })
+const observer = new IntersectionObserver(animateOnScroll, observerOptions);
+targets.forEach((target) => observer.observe(target));

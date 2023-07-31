@@ -24,7 +24,6 @@
 html {
     scroll-behavior: smooth;
     transition: scroll 3s linear;
-    overflow-x: hidden;
 }
 
 body {
@@ -156,45 +155,16 @@ main {
     display: flex;
     justify-content: center;
     background-color: $section_bg_black;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: $section_width;
+    height: $section_height;
     position: absolute;
     top: 1200px;
     transition: all 0.3s ease-in-out;
     text-align: center;
 
 
-    @include pyramid;
 
-
-    .hiddenCircle {
-        width: 120px;
-        height: 120px;
-        position: absolute;
-        top: -10px;
-        border: 3px;
-        border-style: dashed;
-        border-radius: 50%;
-        opacity: 0;
-        transition: opacity 1.0s ease-in;
-        animation: hiddenCircleAnimation 0.6s infinite ease-in;
-
-        @keyframes hiddenCircleAnimation{
-            0% {
-                transform: rotate(0deg);
-
-            }
-
-            100%{ 
-                transform: rotate(360deg);
-
-            }
-
-        }
-  
-    }
-
+   
     .flex-intern {
         display: flex;
         flex-direction: column;
@@ -214,7 +184,6 @@ main {
 
 .block-main-flex {
     @include flexStart(space-around, center ,column );
-    opacity: 0;
     transition: all 4.2s ease-in-out;
    
     
@@ -279,10 +248,13 @@ main {
     width: 100%;
     @include flexStart(center, center , row );
     text-align: center;
-    top: 400px;
+    top: 350px;
     strong {
         font-size: 300%;
     }
+    
+
+   
 
     //animação de click sugestivo
 
@@ -325,7 +297,16 @@ main {
 
 
 
+.scrollDownIcon {
+    position: absolute;
+    bottom: 0;
+    
 
+    img {
+        width: 6rem;
+     
+    }
+}
 
 
 
@@ -431,7 +412,7 @@ main {
     
   
     @media (max-width: $mobile-width) {
-    
+
     top: 350px; 
     left: 45vw;
     visibility: visible;
@@ -820,11 +801,11 @@ main {
 }
 
 [data-anime="left"] {
-    transform: translate3d(-50px, 0, 0);
+    transform: translateX(-50px);
 }
 
 [data-anime="right"] {
-    transform: translate3d(50px, 0, 0);
+    transform: translateX(50px);
 }
 
 [data-anime="down"] {
