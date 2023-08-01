@@ -13,6 +13,7 @@ const hamburger_menu_toggle = document.querySelector('.hamburger-menu-toggle');
 const $lang_change = document.querySelector('.lang-change');
 const $brand_flex_icon = document.querySelector('.brand-flex-icon');
 const $knowledge_card = document.querySelectorAll('.card');
+const scrollTopButton = document.getElementById('ScrollUpBtn');
 
 
 
@@ -252,3 +253,15 @@ function smoothScroll() {
 
 }
 smoothScroll();
+
+
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Add smooth scrolling animation
+  });
+}
+
+// Add click event listener to the button
+scrollTopButton.addEventListener('click', scrollToTop);

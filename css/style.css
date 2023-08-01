@@ -891,6 +891,17 @@ main {
   opacity: 1;
 }
 
+.ScrollUpBtn {
+  position: absolute;
+  bottom: 300px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.ScrollUpBtn img {
+  width: 7rem;
+}
+
 #LinkedIn {
   padding: 20px;
   border: none;
