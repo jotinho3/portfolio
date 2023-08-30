@@ -350,6 +350,39 @@ main {
 .nav-flex .disabled {
   opacity: 0;
 }
+.nav-flex .socialIcons {
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 878px) {
+  .nav-flex .socialIcons {
+    display: none;
+  }
+}
+.nav-flex .socialIcons .behanceIcon {
+  margin-top: 0.9rem;
+  width: 3rem;
+  height: 3rem;
+}
+@media (max-width: 878px) {
+  .nav-flex .socialIcons .behanceIcon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+.nav-flex .socialIcons .linkedinIcon,
+.nav-flex .socialIcons .githubIcon {
+  margin-top: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+@media (max-width: 878px) {
+  .nav-flex .socialIcons .linkedinIcon,
+  .nav-flex .socialIcons .githubIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
 .nav-flex .lang-navigationbtn {
   display: flex;
   justify-content: center;
@@ -364,6 +397,12 @@ main {
 .nav-flex .brand-flex-icon {
   display: flex;
   align-items: center;
+}
+@media (max-width: 878px) {
+  .nav-flex .brand-flex-icon img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }
 .nav-flex .nav-navigationBtn {
   margin-top: 10px;
@@ -422,7 +461,8 @@ main {
     gap: 350px;
   }
 }
-.block-main .flex-intern h3, .block-main .flex-intern h2 {
+.block-main .flex-intern h3,
+.block-main .flex-intern h2 {
   color: #fff;
 }
 .block-main .flex-intern div {
@@ -451,7 +491,8 @@ main {
     width: 100%;
   }
 }
-.block-main-flex h1, .block-main-flex p {
+.block-main-flex h1,
+.block-main-flex p {
   color: white;
   font-size: 120%;
 }
@@ -565,7 +606,8 @@ main {
     width: auto;
   }
 }
-.block-knowledge h1, .block-knowledge h3 {
+.block-knowledge h1,
+.block-knowledge h3 {
   text-align: center;
 }
 .block-knowledge h1 {
@@ -650,7 +692,8 @@ main {
   }
 }
 
-.block-skills-title h1, .block-skills-title h3 {
+.block-skills-title h1,
+.block-skills-title h3 {
   text-align: center;
 }
 .block-skills-title h1 {
@@ -694,7 +737,8 @@ main {
   gap: 40px;
   margin: 0 20px 0 0;
 }
-.block-skills-cards .skill-card h1, .block-skills-cards .skill-card p {
+.block-skills-cards .skill-card h1,
+.block-skills-cards .skill-card p {
   color: #fff;
   text-align: center;
 }
@@ -917,6 +961,14 @@ main {
   filter: invert(25%);
 }
 
+@media (max-width: 878px) {
+  canvas {
+    display: none;
+  }
+  html, body {
+    max-width: 100%;
+  }
+}
 #LinkedIn {
   padding: 20px;
   border: none;

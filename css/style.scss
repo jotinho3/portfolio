@@ -6,7 +6,7 @@
 @import "./typingeffect"; // linha 278 css / 59 html
 @import "./variables";
 
- 
+
 
 * {
     margin: 0;
@@ -18,7 +18,7 @@
         outline: none;
         outline-width: 0;
     }
-    
+
 }
 
 html {
@@ -31,7 +31,7 @@ body {
     width: 100%;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-    
+
 }
 
 main {
@@ -51,7 +51,7 @@ main {
 
 ::-webkit-scrollbar-thumb {
     background-color: rgb(0, 0, 0);
-   
+
 }
 
 
@@ -67,47 +67,100 @@ main {
 
     .disabled {
         opacity: 0;
+
+    }
+
+    .socialIcons {
+        display: flex;
+        gap: 2rem;
+
+        @media (max-width: 878px) {
+            display: none;
+
+        }
+
         
+
+        .behanceIcon {
+            margin-top: 0.9rem;
+            width: 3rem;
+            height: 3rem;
+
+            @media (max-width: 878px) {
+                width: 1.8rem;
+                height: 1.8rem;
+
+            }
+
+        }
+
+        .linkedinIcon,
+        .githubIcon {
+            margin-top: 1rem;
+            width: 2.5rem;
+            height: 2.5rem
+            
+        }
+
+        @media (max-width: 878px) {
+            .linkedinIcon,
+            .githubIcon {
+                width: 1.5rem;
+                height: 1.5rem
+                
+            }
+            
+        }
     }
 
 
+
+
+
     .lang-navigationbtn {
-        @include flexStart(center,center ,row );
+        @include flexStart(center, center, row);
         gap: 20px;
-        
+
 
         .lang-change {
             cursor: pointer;
             z-index: 10;
 
-            
-            
+
+
         }
 
-        
 
-        
 
-        
+
+
+
     }
 
     .brand-flex-icon {
         display: flex;
         align-items: center;
+        
+      @media (max-width: 878px) {
+        img {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+        
+      }
 
 
-       
     }
 
-   
+
 
     .nav-navigationBtn {
         margin-top: 10px;
         z-index: 31;
         cursor: pointer;
-      
-        
-       
+
+
+
     }
 }
 
@@ -123,10 +176,10 @@ main {
 }
 
 #particles-js canvas {
-  
+
     animation: particlePopUp 1s ease 0s normal none;
-   
-    
+
+
 }
 
 @keyframes particlePopUp {
@@ -138,9 +191,9 @@ main {
     100% {
         opacity: 1;
         transform: scale(1);
-        
+
     }
-    
+
 }
 
 
@@ -164,12 +217,12 @@ main {
 
     @media (max-width: $mobile-width) {
         height: 120rem;
-        
+
     }
 
 
 
-   
+
     .flex-intern {
         display: flex;
         justify-content: center;
@@ -179,10 +232,11 @@ main {
         @media (max-width: $mobile-width) {
             flex-direction: column;
             gap: 350px;
-            
+
         }
 
-        h3, h2 {
+        h3,
+        h2 {
             color: #fff;
         }
 
@@ -193,11 +247,11 @@ main {
             gap: 20px;
             width: 80dvw;
             max-height: 10rem;
-         
+
         }
 
-        
-        
+
+
     }
 }
 
@@ -210,35 +264,36 @@ main {
 
 
 .block-main-flex {
-    @include flexStart(space-evenly, center ,column );
+    @include flexStart(space-evenly, center, column);
     transition: all 4.2s ease-in-out;
     margin-bottom: 13rem;
-   
-    
+
+
 
     @media (max-width: $mobile-width) {
-        @include flexStart(space-around, center ,column );
+        @include flexStart(space-around, center, column);
         width: 100%;
-        
-        
+
+
     }
 
 
 
 
-    h1,p {
+    h1,
+    p {
         color: white;
         font-size: 120%;
 
 
     }
 
-    
+
     div {
         width: 30%;
     }
 
-    
+
 
 }
 
@@ -259,14 +314,14 @@ main {
         height: $section_height + 200px;
         padding: 0;
     }
-    
 
-    
+
+
 }
 
 .block-main-hover {
     transform: scale(1.2) !important;
-    
+
 }
 
 
@@ -274,60 +329,66 @@ main {
 .name-presentation {
     position: absolute;
     width: 100%;
-    @include flexStart(center, center , row );
+    @include flexStart(center, center, row);
     text-align: center;
     top: 250px;
+
+
+    
+
     strong {
         font-size: 300%;
     }
 
     .myProjectsh2 {
-       
+
         margin-top: 2rem;
         transition: transform .3s ease;
         cursor: pointer;
 
-        a{
+        a {
             text-decoration: none;
             color: #000;
             font-size: 1.5rem;
         }
-        
+
         &:hover {
             transform: scale(110%);
         }
-      
+
     }
 
-   
-      
-    
 
-   
+
+
+
+
 
     //animação de click sugestivo
 
-.suggestClick {
-    position: absolute;
-    top: 800px; 
-    left: 40vw; @media (max-width:$mobile-width) {
-        left: 16vw;
-        
-        
-    }
-  
-    img {
-        width: 100%;
-        height: 70px;
-        transform: rotate(-75deg);
-       
-    }
-  
-   }
+    .suggestClick {
+        position: absolute;
+        top: 800px;
+        left: 40vw;
+
+        @media (max-width:$mobile-width) {
+            left: 16vw;
 
 
-    
-  
+        }
+
+        img {
+            width: 100%;
+            height: 70px;
+            transform: rotate(-75deg);
+
+        }
+
+    }
+
+
+
+
 
     @media (max-width: $mobile-width) {
         h2 strong {
@@ -349,13 +410,13 @@ main {
 .scrollDownIcon {
     position: absolute;
     bottom: 0;
-    
+
 
     img {
         width: 5rem;
 
-            
-     
+
+
     }
 }
 
@@ -372,49 +433,51 @@ main {
     top: 2500px;
     transition: all 0.3s ease-in-out;
 
-    
-  @media (max-width: $tablet-width) {
+
+    @media (max-width: $tablet-width) {
 
         position: absolute !important;
         top: 1900px !important;
-   
-
-    
-    
-}
-
-@media (max-width: $landscape-width) {
-
-    position: absolute !important;
-    top: 3500px !important;
 
 
 
 
-}
+    }
 
-@media (max-width: $mobile-width) {
+    @media (max-width: $landscape-width) {
+
+        position: absolute !important;
+        top: 3500px !important;
+
+
+
+
+    }
+
+    @media (max-width: $mobile-width) {
 
         position: absolute !important;
         top: 3500px !important;
         width: auto;
-   
-
-    
-    
-}
 
 
-    h1,h3 {
+
+
+    }
+
+
+    h1,
+    h3 {
         text-align: center;
     }
 
     h1 {
         font-size: 3rem;
         color: rgb(0, 0, 0);
+
         @media (max-width: 720px) {
             font-size: 2rem;
-            
+
         }
     }
 
@@ -433,8 +496,8 @@ main {
         flex-wrap: wrap;
 
         .cssicon {
-           width: 170px;
-           height: 170px;
+            width: 170px;
+            height: 170px;
         }
     }
 
@@ -450,7 +513,7 @@ main {
     }
 
 
-    
+
 
 }
 
@@ -460,20 +523,21 @@ main {
     visibility: hidden;
     position: absolute;
 
-    
-  
+
+
     @media (max-width: $mobile-width) {
 
-    top: 350px; 
-    left: 45vw;
-    visibility: visible;
-    img {
-        width: 30px;
-        height: 30px;
-     
-       
-    }
-        
+        top: 350px;
+        left: 45vw;
+        visibility: visible;
+
+        img {
+            width: 30px;
+            height: 30px;
+
+
+        }
+
         h2 strong {
             font-size: 200%;
         }
@@ -484,11 +548,11 @@ main {
 
 
     }
-   }
+}
 
 
-    
-  
+
+
 
 
 
@@ -505,13 +569,13 @@ main {
     top: 5000px;
 
 
-    @media (max-width: $notebook-width){
+    @media (max-width: $notebook-width) {
         top: 5000px;
     }
 
 
 
-    @media (max-width: $mobile-width){
+    @media (max-width: $mobile-width) {
         height: max-content;
         gap: 60px;
         top: +12000px;
@@ -522,16 +586,18 @@ main {
 .block-skills-title {
 
 
-    h1,h3 {
+    h1,
+    h3 {
         text-align: center;
     }
 
     h1 {
         font-size: 5rem;
         color: #fff;
+
         @media (max-width: 720px) {
             font-size: 2rem;
-            
+
         }
     }
 
@@ -541,7 +607,7 @@ main {
         color: rgb(139, 139, 139);
     }
 
-   
+
 }
 
 
@@ -554,33 +620,35 @@ main {
 
 .block-skills-cards {
     @include flexStart(space-around, center, row);
-    width: 80%; 
+    width: 80%;
     height: max-content;
+
     @media (max-width: 720px) {
-        @include flexStart(space-around, center ,column );
+        @include flexStart(space-around, center, column);
         gap: 100px;
-        
+
     }
 
-    
+
 
     .skill-card {
-        @include flexStart(center, center, column );
+        @include flexStart(center, center, column);
         gap: 40px;
         margin: 0 20px 0 0;
 
 
-        h1, p {
+        h1,
+        p {
             color: #fff;
             text-align: center;
         }
 
 
 
-        img{
+        img {
             width: 40px;
             height: 40px;
-        
+
         }
     }
 
@@ -600,11 +668,11 @@ main {
     text-align: center;
 
 
-    @media (max-width: $notebook-width){
+    @media (max-width: $notebook-width) {
         top: 6000px;
     }
 
-    @media (max-width: $landscape-width){
+    @media (max-width: $landscape-width) {
         top: 7300px;
     }
 
@@ -612,18 +680,18 @@ main {
     @media (max-width: $tablet-width) {
         top: +11000px;
         gap: 50px;
-        
+
     }
 
     @media (max-width: $mobile-width) {
         top: +14000px;
         gap: 120px;
-        
+
     }
-    
 
 
-  
+
+
 
 
     .block-projects-title {
@@ -632,29 +700,29 @@ main {
 
 
     .projects-card {
-        @include flexStart(center, center, row);    
+        @include flexStart(center, center, row);
         gap: 100px;
 
-        
+
 
 
         @media (max-width: $mobile-width) {
             @include flexStart(center, center, column);
 
-               
+
         }
-        
+
 
         .card-title {
             @include flexStart(center, center, column);
             gap: 40px;
 
-           
+
 
         }
 
         .card-img {
-            
+
             img {
                 max-width: 80dvw;
             }
@@ -667,16 +735,18 @@ main {
 
             @media (max-width: $notebook-width) {
                 order: 1;
+
                 video {
                     max-width: 30vw;
                 }
 
 
             }
-            
+
 
             @media (max-width: $tablet-width) {
                 order: 1;
+
                 video {
                     max-width: 80vw;
                 }
@@ -685,52 +755,50 @@ main {
             }
         }
 
-    button {
-        padding: 8px 20px 8px 20px;
-        cursor: pointer;
-        border: none;
-        border-radius: 5px;
-        background-color: #000;
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.2rem;
-        margin-top: 20px;
-        
+        button {
+            padding: 8px 20px 8px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #000;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            margin-top: 20px;
 
 
 
 
 
-        i {
-            font-size: 150%;
-            color: #fff
-            
-           
+
+            i {
+                font-size: 150%;
+                color: #fff
+            }
+
         }
 
-    }
 
-    
 
-      
+
 
     }
 }
 
 .projects-flex-box {
-    @include flexStart(center, center , row );
+    @include flexStart(center, center, row);
 
 
 
 
 
     .projects-flex-content {
-        @include flexStart(center, center , row );
+        @include flexStart(center, center, row);
         width: 50%;
 
 
     }
-    
+
 
 }
 
@@ -738,7 +806,7 @@ main {
 .project-stack-flex {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     gap: 20px;
 
     img {
@@ -758,23 +826,23 @@ main {
     gap: 300px;
     text-align: center;
 
-    @media (max-width: $landscape-width){
+    @media (max-width: $landscape-width) {
         top: +16000px;
     }
 
-    @media (max-width: $notebook-width){
+    @media (max-width: $notebook-width) {
         top: +21000px;
     }
 
 
 
-    @media (max-width: $tablet-width){
+    @media (max-width: $tablet-width) {
         height: max-content;
         gap: 50px;
         top: +26000px;
     }
 
-    @media (max-width: $mobile-width){
+    @media (max-width: $mobile-width) {
         top: +26500px;
     }
 
@@ -800,7 +868,7 @@ main {
     z-index: 30;
     visibility: hidden;
     opacity: 0;
-  
+
 
 
     .menu-toggle {
@@ -810,22 +878,23 @@ main {
 
         a {
             text-decoration: none;
-            color:rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
             transition: color ease-out 1s;
+
             &:hover {
                 color: #fff;
-               transform: scale(0.7);
+                transform: scale(0.7);
             }
-            
+
         }
     }
-    
+
 }
 
 .enabled {
     visibility: visible;
     opacity: 1;
-   
+
 }
 
 
@@ -846,6 +915,17 @@ main {
 
 
 
+@media (max-width: 878px) {
+   canvas {
+    display: none;
+   }
+
+   html, body {
+    max-width: 100%;
+   }
+
+
+}
 
 
 #LinkedIn {
@@ -854,16 +934,16 @@ main {
     cursor: pointer;
     background-color: #fff;
     border-radius: 3px;
-  
+
 }
 
 
 [data-anime] {
     opacity: 0;
     transition: .8s;
-    
 
-    
+
+
 }
 
 [data-anime="left"] {
@@ -883,7 +963,7 @@ main {
     opacity: 1;
     display: inherit;
     transform: translate3d(0px, 0px, 0px);
-  
+
 }
 
 
@@ -908,5 +988,3 @@ main {
     width: 0%;
     transition: width 0.2s ease-out;
 }
-
-
