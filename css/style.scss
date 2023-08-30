@@ -276,10 +276,31 @@ main {
     width: 100%;
     @include flexStart(center, center , row );
     text-align: center;
-    top: 350px;
+    top: 250px;
     strong {
         font-size: 300%;
     }
+
+    .myProjectsh2 {
+       
+        margin-top: 2rem;
+        transition: transform .3s ease;
+        cursor: pointer;
+
+        a{
+            text-decoration: none;
+            color: #000;
+            font-size: 1.5rem;
+        }
+        
+        &:hover {
+            transform: scale(110%);
+        }
+      
+    }
+
+   
+      
     
 
    
@@ -331,7 +352,9 @@ main {
     
 
     img {
-        width: 6rem;
+        width: 5rem;
+
+            
      
     }
 }
@@ -573,7 +596,7 @@ main {
     background-color: transparent;
     position: absolute;
     top: 6000px;
-    gap: 300px;
+    gap: 200px;
     text-align: center;
 
 
@@ -807,14 +830,16 @@ main {
 
 
 .ScrollUpBtn {
-    position: absolute;
-    bottom: 300px;
+    position: fixed;
+    right: 0;
+    bottom: 20px;
     border: none;
     background-color: transparent;
     cursor: pointer;
 
     img {
-        width: 7rem;
+        width: 5rem;
+        filter: invert(25%);
     }
 }
 
@@ -883,4 +908,5 @@ main {
     width: 0%;
     transition: width 0.2s ease-out;
 }
+
 

@@ -484,10 +484,23 @@ main {
   align-items: center;
   flex-direction: row;
   text-align: center;
-  top: 350px;
+  top: 250px;
 }
 .name-presentation strong {
   font-size: 300%;
+}
+.name-presentation .myProjectsh2 {
+  margin-top: 2rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.name-presentation .myProjectsh2 a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+}
+.name-presentation .myProjectsh2:hover {
+  transform: scale(110%);
 }
 .name-presentation .suggestClick {
   position: absolute;
@@ -518,7 +531,7 @@ main {
   bottom: 0;
 }
 .scrollDownIcon img {
-  width: 6rem;
+  width: 5rem;
 }
 
 .block-knowledge {
@@ -702,7 +715,7 @@ main {
   background-color: transparent;
   position: absolute;
   top: 6000px;
-  gap: 300px;
+  gap: 200px;
   text-align: center;
 }
 @media (max-width: 1380px) {
@@ -892,14 +905,16 @@ main {
 }
 
 .ScrollUpBtn {
-  position: absolute;
-  bottom: 300px;
+  position: fixed;
+  right: 0;
+  bottom: 20px;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
 .ScrollUpBtn img {
-  width: 7rem;
+  width: 5rem;
+  filter: invert(25%);
 }
 
 #LinkedIn {
