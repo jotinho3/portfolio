@@ -212,7 +212,7 @@ hoverNavBtn();
 
 function animateProgressBar() {
   let scrollDistance = $main.getBoundingClientRect().top;
-  let progressWidth = (scrollDistance / ($main.getBoundingClientRect().height - document.documentElement.clientHeight))*4.2 ;
+  let progressWidth = (scrollDistance / ($main.getBoundingClientRect().height - document.documentElement.clientHeight))*8 ;
 
   let value = Math.floor(progressWidth);
 
