@@ -566,11 +566,11 @@ main {
     width: 100%;
     background-color: $section_bg_black;
     position: absolute;
-    top: 5750px;
+    top: 5950px;
 
 
     @media (max-width: $notebook-width) {
-        top: 5000px;
+        top: 5800px;
     }
 
 
@@ -669,7 +669,7 @@ main {
 
 
     @media (max-width: $notebook-width) {
-        top: 6000px;
+        top: 6600px;
     }
 
     @media (max-width: $landscape-width) {

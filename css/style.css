@@ -9,7 +9,7 @@
   flex: 1 1 400px;
   border-radius: 20px;
 }
-@media (max-width: 1380px) {
+@media (max-width: 1385px) {
   .card {
     flex: 1 1 260px;
   }
@@ -675,11 +675,11 @@ main {
   width: 100%;
   background-color: #000;
   position: absolute;
-  top: 5750px;
+  top: 5950px;
 }
-@media (max-width: 1380px) {
+@media (max-width: 1385px) {
   .block-skills-flex {
-    top: 5000px;
+    top: 5800px;
   }
 }
 @media (max-width: 480px) {
@@ -761,9 +761,9 @@ main {
   gap: 200px;
   text-align: center;
 }
-@media (max-width: 1380px) {
+@media (max-width: 1385px) {
   .block-projects-flex {
-    top: 6000px;
+    top: 6600px;
   }
 }
 @media (max-width: 1280px) {
@@ -815,7 +815,7 @@ main {
   width: 550px;
   height: 550px;
 }
-@media (max-width: 1380px) {
+@media (max-width: 1385px) {
   .block-projects-flex .projects-card .card-img {
     order: 1;
   }
@@ -891,7 +891,7 @@ main {
     top: 16000px;
   }
 }
-@media (max-width: 1380px) {
+@media (max-width: 1385px) {
   .footer-main {
     top: 21000px;
   }
