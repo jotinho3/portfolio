@@ -26,8 +26,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-clip-path: circle(150px at 80% 20%);
-          clip-path: circle(150px at 80% 20%);
+  clip-path: circle(150px at 80% 20%);
   transition: 0.5s ease-in-out;
   opacity: 0;
 }
@@ -676,7 +675,7 @@ main {
   width: 100%;
   background-color: #000;
   position: absolute;
-  top: 5300px;
+  top: 5750px;
 }
 @media (max-width: 1380px) {
   .block-skills-flex {
@@ -758,7 +757,7 @@ main {
   padding: 100px;
   background-color: transparent;
   position: absolute;
-  top: 6200px;
+  top: 6600px;
   gap: 200px;
   text-align: center;
 }
